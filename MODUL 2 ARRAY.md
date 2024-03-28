@@ -252,9 +252,7 @@ Bagian kode tersebut bertujuan untuk menampilkan data dari sebuah array tiga dim
 
 ![image](https://github.com/wisnuuu8/Modul-2-Array/assets/162652149/8805e16e-79b4-4c4e-bbe4-35aae8ac6476)
 
-
-
-
+output pertama menampilkan nilai-nilai array tiga dimensi secara detail dengan indeks masing-masing elemen. Output kedua menampilkan nilai-nilai array tiga dimensi dalam format yang lebih sederhana tanpa indeks, dengan setiap baris dari lapisan yang sama dipisahkan oleh baris baru.
 
 **GUIDED 2**
 ```C++
@@ -289,6 +287,8 @@ using namespace std;
 ```
 Penjelasan:
 
+program menyertakan perpustakaan iostream yang menyediakan fungsi-fungsi untuk input/output standar. Kemudian, digunakan deklarasi "using namespace std;" yang mengarahkan penggunaan istilah standar dalam perpustakaan iostream, seperti cin dan cout, ke dalam namespace std
+
 **Bagian 2**
 ```C++
 int main() {
@@ -313,6 +313,37 @@ int main() {
 }
 ```
 Penjelasan:
+
+Dari program diatas pengguna diminta untuk memasukkan panjang array yang diinginkan, Kemudian, pengguna diminta untuk memasukkan angka-angka untuk membentuk array, Program mencari nilai maksimum dalam array tersebut.Setelah nilai maksimum ditemukan, dan program mencetak nilai maksimum beserta lokasinya dalam array.
+
+**Hasil output**
+
+```C++
+Masukkan panjang array: 5
+Masukkan 5 angka
+Array ke-1: 4
+Array ke-2: 5
+Array ke-3: 8
+Array ke-4: 2
+Array ke-5: 7
+Nilai maksimum adalah 8 berada di Array ke 3
+```
+Penjelasan:
+
+1. Pengguna diminta untuk memasukkan panjang array, yang dalam contoh tersebut adalah 5.
+2. Kemudian, pengguna diminta untuk memasukkan 5 angka untuk membentuk array.
+3. Pengguna memasukkan angka-angka berikut:
+Array ke-1: 4
+Array ke-2: 5
+Array ke-3: 8
+Array ke-4: 2
+Array ke-5: 7
+4. Setelah semua angka dimasukkan, program mencari nilai maksimum dalam array tersebut, yang dalam kasus ini adalah angka 8.
+5. Program kemudian mencetak pesan yang menyatakan bahwa nilai maksimum adalah 8 dan berada di Array ke-3. Ini berarti angka 8 ditemukan pada posisi ke-3 dalam array yang dihitung mulai dari indeks 0, sesuai dengan urutan masukan pengguna.
+
+**UNGUIDED**
+
+
 
 
 
