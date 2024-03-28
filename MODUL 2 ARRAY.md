@@ -126,3 +126,193 @@ Hasil ouput:
 ```
 Output yang ditampilkan merupakan representasi dari sebuah array tiga dimensi dengan struktur 2x2x3. Dalam konteks ini, array tersebut dapat diinterpretasikan sebagai sebuah kumpulan data yang tersusun dalam beberapa "lapisan", di mana setiap lapisan memiliki beberapa "baris", dan setiap baris tersebut memiliki beberapa "kolom". Baris-baris pertama dan kedua dari output mewakili dua lapisan pertama dari array, dengan setiap baris menunjukkan nilai-nilai yang terkandung dalam lapisan tersebut. Pemisah berupa baris kosong membedakan antara lapisan pertama dan kedua dari array. Di dalam setiap lapisan, nilai-nilai tersebut diatur dalam baris-baris, dan setiap angka dalam baris mewakili satu elemen dari array.
 
+**GUIDED**
+
+**GUIDED 1**
+```C++
+#include <iostream>
+using namespace std;
+// PROGRAM INPUT ARRAY 3 DIMENSI
+int main()
+{
+// Deklarasi array
+int arr[2][3][3];
+// Input elemen
+for (int x = 0; x < 2; x++)
+{
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << "Input Array[" << x << "][" << y << "][" << z <<
+"] = ";
+cin >> arr[x][y][z];
+}
+}
+cout << endl;
+}
+// Output Array
+for (int x = 0; x < 2; x++)
+{
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << "Data Array[" << x << "][" << y << "][" << z <<
+"] = " << arr[x][y][z] << endl;
+}
+}
+}
+cout << endl;
+// Tampilan array
+for (int x = 0; x < 2; x++)
+{
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << arr[x][y][z] << ends;
+}
+cout << endl;
+}
+cout << endl;
+}
+}
+```
+
+**Bagian 1**
+```C++
+#include <iostream>
+using namespace std;
+```
+Penjelasan:
+
+program menyertakan perpustakaan iostream yang menyediakan fungsi-fungsi untuk input/output standar. Kemudian, digunakan deklarasi "using namespace std;" yang mengarahkan penggunaan istilah standar dalam perpustakaan iostream, seperti cin dan cout, ke dalam namespace std
+
+**Bagian 2**
+```C++
+int main()
+{
+// Deklarasi array
+int arr[2][3][3];
+// Input elemen
+for (int x = 0; x < 2; x++)
+{
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << "Input Array[" << x << "][" << y << "][" << z <<
+"] = ";
+cin >> arr[x][y][z];
+}
+}
+cout << endl;
+}
+```
+Penjelasan:
+
+Array tiga dimensi dideklarasikan sebagai int arr[2][3][3], yang memiliki 2 lapis, masing-masing dengan 3 baris dan 3 kolom. Program kemudian menggunakan loop bersarang untuk mengiterasi melalui setiap lapis, baris, dan kolom dalam array, meminta pengguna untuk memasukkan nilai untuk setiap elemen array. Pengguna diminta untuk memasukkan nilai untuk setiap elemen array dengan menggunakan pesan "Input Array[x][y][z] =", di mana x, y, dan z mewakili indeks lapis, baris, dan kolom dari array. Setelah semua elemen array diisi, array tersebut dapat digunakan untuk operasi lebih lanjut dalam program.
+
+**Bagian 3**
+```C++
+// Output Array
+for (int x = 0; x < 2; x++)
+{
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << "Data Array[" << x << "][" << y << "][" << z <<
+"] = " << arr[x][y][z] << endl;
+}
+}
+}
+cout << endl;
+// Tampilan array
+for (int x = 0; x < 2; x++)
+{
+for (int y = 0; y < 3; y++)
+{
+for (int z = 0; z < 3; z++)
+{
+cout << arr[x][y][z] << ends;
+}
+cout << endl;
+}
+cout << endl;
+}
+}
+```
+Penjelasan :
+
+Bagian kode tersebut bertujuan untuk menampilkan data dari sebuah array tiga dimensi. Pertama, kode menampilkan setiap elemen array beserta indeks baris, kolom, dan lapisannya. Kemudian, kode menampilkan array dalam format yang lebih sederhana tanpa indeks, hanya menampilkan nilai dari setiap elemen dengan elemen-elemen dari baris yang sama dicetak bersama-sama dan setiap baris dari lapisan yang sama dipisahkan dengan baris baru
+
+**Hasil output**
+
+![image](https://github.com/wisnuuu8/Modul-2-Array/assets/162652149/8805e16e-79b4-4c4e-bbe4-35aae8ac6476)
+
+
+
+
+
+**GUIDED 2**
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int maks, a, i = 1, lokasi;
+    cout << "Masukkan panjang array: ";
+    cin >> a;
+    int array[a];
+    cout << "Masukkan " << a << " angka\n";
+    for (i = 0; i < a; i++) {
+        cout << "Array ke-" << (i + 1) << ": ";
+        cin >> array[i];
+    }
+    maks = array[0];
+    for (i = 0; i < a; i++) {
+        if (array[i] > maks) {
+            maks = array[i];
+            lokasi = i;
+        }
+    }
+    cout << "Nilai maksimum adalah " << maks << " berada di Array ke " << (lokasi + 1) << endl;
+    return 0;
+}
+```
+**Bagian 1**
+```C++
+#include <iostream>
+using namespace std;
+```
+Penjelasan:
+
+**Bagian 2**
+```C++
+int main() {
+    int maks, a, i = 1, lokasi;
+    cout << "Masukkan panjang array: ";
+    cin >> a;
+    int array[a];
+    cout << "Masukkan " << a << " angka\n";
+    for (i = 0; i < a; i++) {
+        cout << "Array ke-" << (i + 1) << ": ";
+        cin >> array[i];
+    }
+    maks = array[0];
+    for (i = 0; i < a; i++) {
+        if (array[i] > maks) {
+            maks = array[i];
+            lokasi = i;
+        }
+    }
+    cout << "Nilai maksimum adalah " << maks << " berada di Array ke " << (lokasi + 1) << endl;
+    return 0;
+}
+```
+Penjelasan:
+
+
+
