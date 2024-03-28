@@ -4,7 +4,7 @@
 
 **LATAR BELAKANG** 
 
-Array merupakan struktur data yang sangat penting dalam pemrograman C++. Konsep array memungkinkan programmer untuk menyimpan dan mengakses sejumlah besar data dengann tipe yang sama dalam satu  variabel. Setiap elemen dalam array disimpan secara berurutan dalamm memori komputer dan dapat diakses melalui indeksnya. ndeks array dimulai dari 0 dan berlanjut hingga n-1, di mana n adalah jumlah total elemen dalam array. Salah satu keunggulan utama dari array adalah efisiensi dalam penyimpanan dan akses data. Karena elemen-elemennya tersimpan secara berurutan dalam memori, array memungkinkan akses cepat ke elemen-elemennya. Namun, penting untuk dicatat bahwa ukuran array harus ditentukan pada saat deklarasi dan tidak dapat diubah selama program berjalan. Oleh karena itu, pemrogram harus memperkirakan jumlah maksimum elemen yang dibutuhkan saat mendeklarasikan array. Dengan menggunakan array, programmer dapat mengorganisir data dengan lebih terstruktur dan mengaksesnya dengan lebih efisien, memungkinkan pengembangan aplikasi yang lebih kuat dan efektif.
+Array merupakan struktur data yang sangat penting dalam pemrograman C++(Sihombing, 2019). Konsep array memungkinkan programmer untuk menyimpan dan mengakses sejumlah besar data dengann tipe yang sama dalam satu  variabel. Setiap elemen dalam array disimpan secara berurutan dalamm memori komputer dan dapat diakses melalui indeksnya. ndeks array dimulai dari 0 dan berlanjut hingga n-1, di mana n adalah jumlah total elemen dalam array. Salah satu keunggulan utama dari array adalah efisiensi dalam penyimpanan dan akses data. Karena elemen-elemennya tersimpan secara berurutan dalam memori, array memungkinkan akses cepat ke elemen-elemennya. Namun, penting untuk dicatat bahwa ukuran array harus ditentukan pada saat deklarasi dan tidak dapat diubah selama program berjalan. Oleh karena itu, pemrogram harus memperkirakan jumlah maksimum elemen yang dibutuhkan saat mendeklarasikan array. Dengan menggunakan array, programmer dapat mengorganisir data dengan lebih terstruktur dan mengaksesnya dengan lebih efisien, memungkinkan pengembangan aplikasi yang lebih kuat dan efektif.
 
 **RUMUSAN MASALAH**
 
@@ -32,7 +32,7 @@ Array merupakan struktur data yang paling dasar. Sebelum mempelajari struktur da
 
 **1. ARRAY SATU DIMENSI**
 
-Array satu dimensi adalah tipe variabel yang terdiri dari kumpulan data dengan tipe yang sama yang disusun dalam satu baris atau satu dimensi(Sihombing, 2019). Setiap elemen di dalam array memiliki sebuah indeks atau nomor yang digunakan untuk mengakses elemen tersebut. Indeks dimulai dari 0 dan berakhir pada jumlah elemen dikurangi satu. Contohnya, sebuah array satu dimensi yang berisi bilangan bulat {1, 2, 3, 4, 5} memiliki lima elemen dan indeksnya dimulai dari 0. Indeks 0 merujuk pada elemen pertama, indeks 1 merujuk pada elemen kedua, dan seterusnya hingga indeks 4 merujuk pada elemen kelima. Dengan menggunakan indeks, kita dapat mengakses nilai dari setiap elemen array secara individu, memungkinkan pengolahan dan manipulasi data dengan lebih efisien dalam program C++.
+Array satu dimensi adalah tipe variabel yang terdiri dari kumpulan data dengan tipe yang sama yang disusun dalam satu baris atau satu dimensi. Setiap elemen di dalam array memiliki sebuah indeks atau nomor yang digunakan untuk mengakses elemen tersebut. Indeks dimulai dari 0 dan berakhir pada jumlah elemen dikurangi satu. Contohnya, sebuah array satu dimensi yang berisi bilangan bulat {1, 2, 3, 4, 5} memiliki lima elemen dan indeksnya dimulai dari 0. Indeks 0 merujuk pada elemen pertama, indeks 1 merujuk pada elemen kedua, dan seterusnya hingga indeks 4 merujuk pada elemen kelima. Dengan menggunakan indeks, kita dapat mengakses nilai dari setiap elemen array secara individu, memungkinkan pengolahan dan manipulasi data dengan lebih efisien dalam program C++.
 
 Contoh :
 ```C++
@@ -51,10 +51,8 @@ Program tersebut mendeklarasikan sebuah array bernama arr yang terdiri dari 5 el
 Hasil output :
 
 ```C++
-
 3
 1
-
 ```
 Nilai pertama adalah 3, yang merupakan nilai dari elemen kedua array (arr[1]). Hal ini sesuai dengan nilai yang telah diinisialisasi pada deklarasi array, yaitu {9, 3, 5, 2, 1}. Karena indeks array dimulai dari 0, maka elemen kedua memiliki indeks arr[1].
 
@@ -90,7 +88,7 @@ Elemen pada baris pertama dan kolom kedua memiliki nilai 2.
 Elemen pada baris kedua dan kolom pertama memiliki nilai 2.
 Elemen pada baris kedua dan kolom kedua memiliki nilai 5.
 
-**3. ARRAY TIGA DIMENSI**
+**3. ARRAY  MULTIDIMENSI**
 
 Array multidimensi adalah struktur data yang memungkinkan penyimpanan data dalam bentuk yang lebih kompleks daripada array satu dimensi atau dua dimensi (Harris et al., 2020). Meskipun memiliki kesamaan dasar dengan array satu dan dua dimensi, array multidimensi memiliki kapasitas memori yang lebih besar karena dapat merepresentasikan struktur data dengan lebih dari dua dimensi atau lebih dari dua indeks. Misalnya, dalam array tiga dimensi, setiap elemen memiliki tiga indeks yang mengidentifikasi posisinya dalam array. Penggunaan array multidimensi sangat luas dan dapat ditemukan dalam berbagai bidang. Contohnya termasuk dalam pemrosesan citra, di mana array tiga dimensi sering digunakan untuk merepresentasikan gambar berwarna dengan masing-masing dimensi mewakili tingkat warna merah, hijau, dan biru. Di bidang fisika, array tiga dimensi digunakan untuk menyimpan data pada ruang tiga dimensi, seperti dalam pemodelan fenomena alam seperti medan magnet atau distribusi suhu. Selain itu, array empat dimensi, lima dimensi, dan seterusnya, juga digunakan dalam komputasi ilmiah untuk memodelkan fenomena yang lebih kompleks. Dengan array multidimensi, programmer dapat menyusun data dalam struktur yang lebih terstruktur dan kompleks, memungkinkan analisis dan manipulasi data yang lebih canggih dan efisien.
 
