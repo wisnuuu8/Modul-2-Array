@@ -4,18 +4,22 @@
 
 **LATAR BELAKANG** 
 
-Array merupakan struktur data yang sangat penting dalam pemrograman C++. Konsep arraymemungkinkan programmer untuk menyimpan dan mengakses sejumlah besar data dengann tipe yang sama dalam satu  variabel. Setiap elemen dalam array disimpan secara berurutan dalamm memori komputer dan dapat diakses melalui indeksnya. ndeks array dimulai dari 0 dan berlanjut hingga n-1, di mana n adalah jumlah total elemen dalam array. Salah satu keunggulan utama dari array adalah efisiensi dalam penyimpanan dan akses data. Karena elemen-elemennya tersimpan secara berurutan dalam memori, array memungkinkan akses cepat ke elemen-elemennya. Namun, penting untuk dicatat bahwa ukuran array harus ditentukan pada saat deklarasi dan tidak dapat diubah selama program berjalan. Oleh karena itu, pemrogram harus memperkirakan jumlah maksimum elemen yang dibutuhkan saat mendeklarasikan array. Dengan menggunakan array, programmer dapat mengorganisir data dengan lebih terstruktur dan mengaksesnya dengan lebih efisien, memungkinkan pengembangan aplikasi yang lebih kuat dan efektif.
+Array merupakan struktur data yang sangat penting dalam pemrograman C++. Konsep array memungkinkan programmer untuk menyimpan dan mengakses sejumlah besar data dengann tipe yang sama dalam satu  variabel. Setiap elemen dalam array disimpan secara berurutan dalamm memori komputer dan dapat diakses melalui indeksnya. ndeks array dimulai dari 0 dan berlanjut hingga n-1, di mana n adalah jumlah total elemen dalam array. Salah satu keunggulan utama dari array adalah efisiensi dalam penyimpanan dan akses data. Karena elemen-elemennya tersimpan secara berurutan dalam memori, array memungkinkan akses cepat ke elemen-elemennya. Namun, penting untuk dicatat bahwa ukuran array harus ditentukan pada saat deklarasi dan tidak dapat diubah selama program berjalan. Oleh karena itu, pemrogram harus memperkirakan jumlah maksimum elemen yang dibutuhkan saat mendeklarasikan array. Dengan menggunakan array, programmer dapat mengorganisir data dengan lebih terstruktur dan mengaksesnya dengan lebih efisien, memungkinkan pengembangan aplikasi yang lebih kuat dan efektif.
 
 **RUMUSAN MASALAH**
 
 a. Bagaimana cara memahami konsep array?
+
 b. Bagaimana cara mengetahui jenis dimensi array dan cara penulisannya?
+
 c. Bagaiamana cara mengimplementasikan Array pada kode program yang dibuat?
 
 **TUJUAN PRAKTIKUM**
 
 a. Mahasiswa dapat memahami konsep Array.
+
 b. Mahasiswa dapat mengetahui jenis dimensi Array dan cara penulisannya.
+
 c. Mahasiswa dapat mengimplementasikan Array pada kode program yang dibuat
 
 **BAB 2**
