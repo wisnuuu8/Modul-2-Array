@@ -36,6 +36,93 @@ adalah beberapa jenis array :
 
 Array satu dimensi adalah tipe variabel yang terdiri dari kumpulan data dengan tipe yang sama yang disusun dalam satu baris atau satu dimensi. Setiap elemen di dalam array memiliki sebuah indeks atau nomor yang digunakan untuk mengakses elemen tersebut. Indeks dimulai dari 0 dan berakhir pada jumlah elemen dikurangi satu. Contohnya, sebuah array satu dimensi yang berisi bilangan bulat {1, 2, 3, 4, 5} memiliki lima elemen dan indeksnya dimulai dari 0. Indeks 0 merujuk pada elemen pertama, indeks 1 merujuk pada elemen kedua, dan seterusnya hingga indeks 4 merujuk pada elemen kelima. Dengan menggunakan indeks, kita dapat mengakses nilai dari setiap elemen array secara individu, memungkinkan pengolahan dan manipulasi data dengan lebih efisien dalam program C++.
 
-```C++```
+Contoh :
+```C++
 
+#include <iostream>
+using namespace std;
+int main() {
+int arr[5] = {9, 3, 5, 2, 1}; //deklarasi array
+cout<< arr[1] << endl;
+cout<< arr[4];
+}
+
+```
+Program tersebut mendeklarasikan sebuah array bernama arr yang terdiri dari 5 elemen bilangan bulat. Nilai-nilai elemen array adalah {9, 3, 5, 2, 1}. Kemudian, program mencetak nilai dari elemen kedua (arr[1]) dan elemen kelima (arr[4]) dari array arr. Karena indeks array dimulai dari 0, maka arr[1] merujuk pada elemen kedua array (nilai 3), sedangkan arr[4] merujuk pada elemen kelima array (nilai 1). 
+
+Hasil output :
+
+```C++
+
+3
+1
+
+```
+Nilai pertama adalah 3, yang merupakan nilai dari elemen kedua array (arr[1]). Hal ini sesuai dengan nilai yang telah diinisialisasi pada deklarasi array, yaitu {9, 3, 5, 2, 1}. Karena indeks array dimulai dari 0, maka elemen kedua memiliki indeks arr[1].
+
+Nilai kedua adalah 1, yang merupakan nilai dari elemen kelima array (arr[4]). Ini juga sesuai dengan nilai yang telah diinisialisasi pada array. Elemen kelima memiliki indeks arr[4] karena indeks array dimulai dari 0.
+
+**2. ARRAY DUA DIMENSI**
+
+Array dua dimensi adalah konsep yang penting dalam pemrograman yang memungkinkan penyimpanan data dalam bentuk matriks atau tabel. Dalam array dua dimensi, struktur data disusun dalam baris dan kolom, mirip dengan sebuah tabel. Setiap elemen dalam array dua dimensi memiliki dua indeks: indeks baris dan indeks kolom. Indeks baris menunjukkan posisi elemen dalam baris tertentu, sedangkan indeks kolom menunjukkan posisi elemen dalam kolom tersebut. Misalnya, jika kita ingin mengakses elemen pada baris ke-3 dan kolom ke-2 dari array dua dimensi, kita akan menggunakan indeks baris 2 dan indeks kolom 1. Penggunaan dua indeks ini memungkinkan kita untuk secara unik menentukan lokasi setiap elemen dalam array dua dimensi. Hal ini sangat berguna untuk menyimpan data yang memerlukan representasi dua dimensi, seperti data tabel, gambar, atau matriks matematika. Array dua dimensi memungkinkan kita untuk mengorganisir data dalam struktur yang terstruktur dan efisien, sehingga mempermudah akses dan manipulasi data dalam program. Dengan pemahaman yang baik tentang konsep ini, programmer dapat membuat aplikasi yang lebih kompleks dan efektif dalam memproses data dua dimensi.
+
+Contoh :
+```C++
+#include <iostream>
+using namespace std;
+int main() {
+int arr[2][2] = {{3, 2}, {2, 5}};
+for (int i=0; i<2; i++) { //baris
+for(int j=0; j<2; j++) { //kolom
+cout<< arr[i][j] << ends;
+};
+cout << endl;
+};
+}
+```
+Program tersebut mendeklarasikan sebuah array dua dimensi dengan nama `arr` yang memiliki ukuran 2x2. Kemudian, program menggunakan loop bersarang (nested loop) untuk mencetak setiap elemen array ke layar. Setiap elemen dipisahkan oleh spasi, dan setiap baris array dipisahkan oleh newline.
+
+Hasil output :
+```C++
+3 2
+2 5
+```
+Elemen pada baris pertama dan kolom pertama memiliki nilai 3.
+Elemen pada baris pertama dan kolom kedua memiliki nilai 2.
+Elemen pada baris kedua dan kolom pertama memiliki nilai 2.
+Elemen pada baris kedua dan kolom kedua memiliki nilai 5.
+
+**3. ARRAY TIGA DIMENSI**
+
+Array multidimensi adalah struktur data yang memungkinkan penyimpanan data dalam bentuk yang lebih kompleks daripada array satu dimensi atau dua dimensi. Meskipun memiliki kesamaan dasar dengan array satu dan dua dimensi, array multidimensi memiliki kapasitas memori yang lebih besar karena dapat merepresentasikan struktur data dengan lebih dari dua dimensi atau lebih dari dua indeks. Misalnya, dalam array tiga dimensi, setiap elemen memiliki tiga indeks yang mengidentifikasi posisinya dalam array. Penggunaan array multidimensi sangat luas dan dapat ditemukan dalam berbagai bidang. Contohnya termasuk dalam pemrosesan citra, di mana array tiga dimensi sering digunakan untuk merepresentasikan gambar berwarna dengan masing-masing dimensi mewakili tingkat warna merah, hijau, dan biru. Di bidang fisika, array tiga dimensi digunakan untuk menyimpan data pada ruang tiga dimensi, seperti dalam pemodelan fenomena alam seperti medan magnet atau distribusi suhu. Selain itu, array empat dimensi, lima dimensi, dan seterusnya, juga digunakan dalam komputasi ilmiah untuk memodelkan fenomena yang lebih kompleks. Dengan array multidimensi, programmer dapat menyusun data dalam struktur yang lebih terstruktur dan kompleks, memungkinkan analisis dan manipulasi data yang lebih canggih dan efisien.
+
+Contoh:
+```C++
+#include <iostream>
+using namespace std;
+int main() {
+int arr[2][2][3] = {{{2, 8, 7}, {6, 5, 1}}, {{8,
+5, 2}, {9, 2 ,7}}};
+for (int i=0; i<2; i++) {
+for(int j=0; j<2; j++) {
+for(int k=0; k<3; k++) {
+cout<< arr[i][j][k] << ends;
+};
+cout<< endl;
+};
+cout<< endl;
+};
+}
+```
+Program tersebut mendemonstrasikan penggunaan array tiga dimensi untuk menyimpan data dalam struktur tiga dimensi. Array `arr` memiliki dimensi 2x2x3, dan setiap elemennya diakses menggunakan tiga loop bersarang. Program kemudian menampilkan nilai dari setiap elemen array dalam format yang sesuai dengan struktur tiga dimensinya.
+
+Hasil ouput:
+```C++
+2 8 7 
+6 5 1 
+
+8 5 2 
+9 2 7 
+```
+Output yang ditampilkan merupakan representasi dari sebuah array tiga dimensi dengan struktur 2x2x3. Dalam konteks ini, array tersebut dapat diinterpretasikan sebagai sebuah kumpulan data yang tersusun dalam beberapa "lapisan", di mana setiap lapisan memiliki beberapa "baris", dan setiap baris tersebut memiliki beberapa "kolom". Baris-baris pertama dan kedua dari output mewakili dua lapisan pertama dari array, dengan setiap baris menunjukkan nilai-nilai yang terkandung dalam lapisan tersebut. Pemisah berupa baris kosong membedakan antara lapisan pertama dan kedua dari array. Di dalam setiap lapisan, nilai-nilai tersebut diatur dalam baris-baris, dan setiap angka dalam baris mewakili satu elemen dari array.
 
