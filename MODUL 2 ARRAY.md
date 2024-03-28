@@ -687,6 +687,144 @@ Penjelasan:
 
 **BAGIAN 2**
 ```C++
+int main() {
+    int n;
+    
+    // Meminta pengguna untuk memasukkan jumlah elemen array
+    std::cout << "Masukkan jumlah elemen array: ";
+    std::cin >> n;
+
+    // Deklarasi array dengan ukuran yang dimasukkan oleh pengguna
+    std::vector<int> array(n);
+
+    // Input elemen array
+    std::cout << "Masukkan elemen-elemen array:\n";
+    for (int i = 0; i < n; ++i) {
+        std::cout << "Array[" << i << "]: ";
+        std::cin >> array[i];
+    }
+
+    // Menampilkan menu
+    std::cout << "\nMenu:\n";
+    std::cout << "1. Cari nilai maksimum\n";
+    std::cout << "2. Cari nilai minimum\n";
+    std::cout << "3. Cari nilai rata-rata\n";
+
+    int pilihan;
+    std::cout << "Pilih menu (1/2/3): ";
+    std::cin >> pilihan;
+
+    // Melakukan operasi sesuai dengan pilihan pengguna
+    switch (pilihan) {
+        case 1:
+            // Mencari nilai maksimum
+            std::cout << "Nilai maksimum: " << *std::max_element(array.begin(), array.end()) << std::endl;
+            break;
+        case 2:
+            // Mencari nilai minimum
+            std::cout << "Nilai minimum: " << *std::min_element(array.begin(), array.end()) << std::endl;
+            break;
+        case 3:
+            // Menghitung nilai rata-rata
+            double total = 0;
+            for (int i = 0; i < n; ++i) {
+                total += array[i];
+            }
+            std::cout << "Nilai rata-rata: " << total / n << std::endl;
+            break;
+        
+            std::cout << "Pilihan tidak valid!\n";
+            break;
+    }
+
+    return 0;
+}
+```
+Penjelasan:
+
+Program di atas adalah sebuah program dalam bahasa C++ yang memungkinkan pengguna untuk memasukkan elemen-elemen array dan kemudian melakukan operasi untuk mencari nilai maksimum, minimum, atau rata-rata dari array tersebut. Berikut adalah penjelasan perbagian code tersebut:
+
+1. **Deklarasi Variabel dan Input Jumlah Elemen Array**:
+   - `int n;`: Mendeklarasikan variabel `n` yang akan digunakan untuk menyimpan jumlah elemen array.
+   - `std::cout << "Masukkan jumlah elemen array: ";`: Menampilkan pesan ke layar untuk meminta pengguna memasukkan jumlah elemen array.
+   - `std::cin >> n;`: Mengambil input dari pengguna untuk jumlah elemen array dan menyimpannya dalam variabel `n`.
+
+2. **Deklarasi dan Pengisian Array**:
+   - `std::vector<int> array(n);`: Mendeklarasikan vektor `array` dengan ukuran `n`, sesuai dengan jumlah elemen yang dimasukkan oleh pengguna.
+   - Input elemen array dilakukan dengan menggunakan perulangan `for` untuk mengulangi proses memasukkan nilai elemen sebanyak `n` kali.
+   - Setiap elemen array dimasukkan oleh pengguna dengan menampilkan pesan "Array[i]: " di layar dan menyimpan nilai yang dimasukkan oleh pengguna ke dalam vektor `array`.
+
+3. **Menampilkan Menu**:
+   - Menampilkan menu pilihan kepada pengguna untuk mencari nilai maksimum, minimum, atau rata-rata dari array.
+   - Menu ditampilkan dengan menggunakan beberapa perintah `std::cout` untuk menampilkan opsi-opsi yang tersedia.
+
+4. **Memilih Menu dan Melakukan Operasi**:
+   - Pengguna diminta untuk memilih salah satu opsi dari menu dengan memasukkan angka 1, 2, atau 3.
+   - Pilihan pengguna disimpan dalam variabel `pilihan`.
+   - Program menggunakan struktur kontrol `switch-case` untuk mengevaluasi pilihan pengguna dan melakukan operasi yang sesuai:
+     - Jika pengguna memilih 1, program akan mencari nilai maksimum dari array menggunakan fungsi `std::max_element`.
+     - Jika pengguna memilih 2, program akan mencari nilai minimum dari array menggunakan fungsi `std::min_element`.
+     - Jika pengguna memilih 3, program akan menghitung nilai rata-rata dari array.
+     - Jika pilihan pengguna tidak valid (bukan 1, 2, atau 3), program akan menampilkan pesan "Pilihan tidak valid!".
+
+5. **Return 0**:
+   - Program mengembalikan nilai 0 untuk menandakan bahwa program telah selesai dijalankan tanpa ada kesalahan.
+
+**Hasil output**
+
+**Hasil output ketika kita mencari nilai maksimum**
+```C++
+Masukkan jumlah elemen array: 4
+Masukkan elemen-elemen array:
+Array[0]: 2
+Array[1]: 4
+Array[2]: 6
+Array[3]: 8
+
+Menu:
+1. Cari nilai maksimum
+2. Cari nilai minimum
+3. Cari nilai rata-rata
+Pilih menu (1/2/3): 1
+Nilai maksimum: 8
+```
+
+**Hasil output ketika kita mencari nilai minimum**
+```C++
+Masukkan jumlah elemen array: 4
+Masukkan elemen-elemen array:
+Array[0]: 2
+Array[1]: 4
+Array[2]: 6
+Array[3]: 8
+
+Menu:
+1. Cari nilai maksimum
+2. Cari nilai minimum
+3. Cari nilai rata-rata
+Pilih menu (1/2/3): 2
+Nilai minimum: 2
+```
+
+**Hasil output ketika mencari nilai rata rata**
+
+```C++
+Masukkan jumlah elemen array: 4
+Masukkan elemen-elemen array:
+Array[0]: 2
+Array[1]: 4
+Array[2]: 6
+Array[3]: 8
+
+Menu:
+1. Cari nilai maksimum
+2. Cari nilai minimum
+3. Cari nilai rata-rata
+Pilih menu (1/2/3): 3
+Nilai rata-rata: 5
+```
+
+
 
 
 
