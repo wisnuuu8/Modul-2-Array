@@ -28,13 +28,11 @@ c. Mahasiswa dapat mengimplementasikan Array pada kode program yang dibuat
 
 **DASAR TEORI**
 
-Array merupakan struktur data yang paling dasar. Sebelum mempelajari struktur data
-lainnya, alangkah baiknya, kita perlu mempelajari Array terlebih dahulu. Berikut ini
-adalah beberapa jenis array :
+Array merupakan struktur data yang paling dasar. Sebelum mempelajari struktur data lainnya, alangkah baiknya, kita perlu mempelajari Array terlebih dahulu. Berikut ini adalah beberapa jenis array :
 
 **1. ARRAY SATU DIMENSI**
 
-Array satu dimensi adalah tipe variabel yang terdiri dari kumpulan data dengan tipe yang sama yang disusun dalam satu baris atau satu dimensi. Setiap elemen di dalam array memiliki sebuah indeks atau nomor yang digunakan untuk mengakses elemen tersebut. Indeks dimulai dari 0 dan berakhir pada jumlah elemen dikurangi satu. Contohnya, sebuah array satu dimensi yang berisi bilangan bulat {1, 2, 3, 4, 5} memiliki lima elemen dan indeksnya dimulai dari 0. Indeks 0 merujuk pada elemen pertama, indeks 1 merujuk pada elemen kedua, dan seterusnya hingga indeks 4 merujuk pada elemen kelima. Dengan menggunakan indeks, kita dapat mengakses nilai dari setiap elemen array secara individu, memungkinkan pengolahan dan manipulasi data dengan lebih efisien dalam program C++.
+Array satu dimensi adalah tipe variabel yang terdiri dari kumpulan data dengan tipe yang sama yang disusun dalam satu baris atau satu dimensi(Sihombing, 2019). Setiap elemen di dalam array memiliki sebuah indeks atau nomor yang digunakan untuk mengakses elemen tersebut. Indeks dimulai dari 0 dan berakhir pada jumlah elemen dikurangi satu. Contohnya, sebuah array satu dimensi yang berisi bilangan bulat {1, 2, 3, 4, 5} memiliki lima elemen dan indeksnya dimulai dari 0. Indeks 0 merujuk pada elemen pertama, indeks 1 merujuk pada elemen kedua, dan seterusnya hingga indeks 4 merujuk pada elemen kelima. Dengan menggunakan indeks, kita dapat mengakses nilai dari setiap elemen array secara individu, memungkinkan pengolahan dan manipulasi data dengan lebih efisien dalam program C++.
 
 Contoh :
 ```C++
@@ -94,7 +92,7 @@ Elemen pada baris kedua dan kolom kedua memiliki nilai 5.
 
 **3. ARRAY TIGA DIMENSI**
 
-Array multidimensi adalah struktur data yang memungkinkan penyimpanan data dalam bentuk yang lebih kompleks daripada array satu dimensi atau dua dimensi. Meskipun memiliki kesamaan dasar dengan array satu dan dua dimensi, array multidimensi memiliki kapasitas memori yang lebih besar karena dapat merepresentasikan struktur data dengan lebih dari dua dimensi atau lebih dari dua indeks. Misalnya, dalam array tiga dimensi, setiap elemen memiliki tiga indeks yang mengidentifikasi posisinya dalam array. Penggunaan array multidimensi sangat luas dan dapat ditemukan dalam berbagai bidang. Contohnya termasuk dalam pemrosesan citra, di mana array tiga dimensi sering digunakan untuk merepresentasikan gambar berwarna dengan masing-masing dimensi mewakili tingkat warna merah, hijau, dan biru. Di bidang fisika, array tiga dimensi digunakan untuk menyimpan data pada ruang tiga dimensi, seperti dalam pemodelan fenomena alam seperti medan magnet atau distribusi suhu. Selain itu, array empat dimensi, lima dimensi, dan seterusnya, juga digunakan dalam komputasi ilmiah untuk memodelkan fenomena yang lebih kompleks. Dengan array multidimensi, programmer dapat menyusun data dalam struktur yang lebih terstruktur dan kompleks, memungkinkan analisis dan manipulasi data yang lebih canggih dan efisien.
+Array multidimensi adalah struktur data yang memungkinkan penyimpanan data dalam bentuk yang lebih kompleks daripada array satu dimensi atau dua dimensi (Harris et al., 2020). Meskipun memiliki kesamaan dasar dengan array satu dan dua dimensi, array multidimensi memiliki kapasitas memori yang lebih besar karena dapat merepresentasikan struktur data dengan lebih dari dua dimensi atau lebih dari dua indeks. Misalnya, dalam array tiga dimensi, setiap elemen memiliki tiga indeks yang mengidentifikasi posisinya dalam array. Penggunaan array multidimensi sangat luas dan dapat ditemukan dalam berbagai bidang. Contohnya termasuk dalam pemrosesan citra, di mana array tiga dimensi sering digunakan untuk merepresentasikan gambar berwarna dengan masing-masing dimensi mewakili tingkat warna merah, hijau, dan biru. Di bidang fisika, array tiga dimensi digunakan untuk menyimpan data pada ruang tiga dimensi, seperti dalam pemodelan fenomena alam seperti medan magnet atau distribusi suhu. Selain itu, array empat dimensi, lima dimensi, dan seterusnya, juga digunakan dalam komputasi ilmiah untuk memodelkan fenomena yang lebih kompleks. Dengan array multidimensi, programmer dapat menyusun data dalam struktur yang lebih terstruktur dan kompleks, memungkinkan analisis dan manipulasi data yang lebih canggih dan efisien.
 
 Contoh:
 ```C++
@@ -826,6 +824,9 @@ Nilai rata-rata: 5
 
 **DAFTAR PUSTAKA**
 
+Sihombing, J. (2019). Penerapan Stack Dan Queue Pada Array Dan Linked List Dalam Java. Jurnal Ilmiah Infokom, 7(2), 15–24.
+
+Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N. J., Kern, R., Picus, M., Hoyer, S., van Kerkwijk, M. H., Brett, M., Haldane, A., del Río, J. F., Wiebe, M., Peterson, P., … Oliphant, T. E. (2020). Array programming with NumPy. Nature, 585(7825), 357–362. https://doi.org/10.1038/s41586-020-2649-2
 
 
 
