@@ -489,5 +489,131 @@ Hasil output:
 **UNGUIDED2**
 ```C++
 
+#include <iostream>
+#include <vector>
+
+int main() {
+    int panjang, lebar, tinggi;
+
+    // Meminta pengguna untuk memasukkan panjang, lebar, dan tinggi array
+    std::cout << "Masukkan panjang array: ";
+    std::cin >> panjang;
+    std::cout << "Masukkan lebar array: ";
+    std::cin >> lebar;
+    std::cout << "Masukkan tinggi array: ";
+    std::cin >> tinggi;
+
+    // Deklarasi array tiga dimensi sesuai dengan input pengguna
+    std::vector < std::vector < std::vector < int >  > > array(panjang, std::vector < std::vector < int > > (lebar, std::vector < int > (tinggi)));
+
+    // Input elemen array
+    std::cout << "Masukkan elemen-elemen array:\n";
+    for (int i = 0; i < panjang; ++i) {
+        for (int j = 0; j < lebar; ++j) {
+            for (int k = 0; k < tinggi; ++k) {
+                std::cout << "Array[" << i << "][" << j << "][" << k << "]: ";
+                std::cin >> array[i][j][k];
+            }
+        }
+    }
+
+    // Menampilkan elemen-elemen array
+    std::cout << "\nElemen-elemen array:\n";
+    for (int i = 0; i < panjang; ++i) {
+        for (int j = 0; j < lebar; ++j) {
+            for (int k = 0; k < tinggi; ++k) {
+                std::cout << "Array[" << i << "][" << j << "][" << k << "]: " << array[i][j][k] << std::endl;
+            }
+        }
+    }
+
+    return 0;
+}
+```
+**BAGIAN 1**
+```C++
+#include <iostream>
+#include <vector>
+```
+Penjelasan:
+
+#include <iostream> digunakan untuk memungkinkan penggunaan fungsi-fungsi input-output standar seperti cout dan cin. Sedangkan #include <vector> digunakan untuk mengizinkan penggunaan struktur data vector, yang merupakan array dinamis yang memungkinkan penyimpanan dan manipulasi data dengan fleksibilitas lebih besar daripada array statis
+
+**BAGIAN 2**
+```C++
+int main() {
+    int panjang, lebar, tinggi;
+
+    // Meminta pengguna untuk memasukkan panjang, lebar, dan tinggi array
+    std::cout << "Masukkan panjang array: ";
+    std::cin >> panjang;
+    std::cout << "Masukkan lebar array: ";
+    std::cin >> lebar;
+    std::cout << "Masukkan tinggi array: ";
+    std::cin >> tinggi;
+
+    // Deklarasi array tiga dimensi sesuai dengan input pengguna
+    std::vector < std::vector < std::vector < int >  > > array(panjang, std::vector < std::vector < int > > (lebar, std::vector < int > (tinggi)));
+
+    // Input elemen array
+    std::cout << "Masukkan elemen-elemen array:\n";
+    for (int i = 0; i < panjang; ++i) {
+        for (int j = 0; j < lebar; ++j) {
+            for (int k = 0; k < tinggi; ++k) {
+                std::cout << "Array[" << i << "][" << j << "][" << k << "]: ";
+                std::cin >> array[i][j][k];
+            }
+        }
+    }
+```
+Penjelasan:
+
+1. Mendeklarasikan tiga variabel panjang, lebar, dan tinggi untuk menyimpan ukuran array tiga dimensi.
+   
+2. Meminta pengguna untuk memasukkan nilai panjang, lebar, dan tinggi array.
+   
+3. Mendeklarasikan array tiga dimensi menggunakan vektor dari vektor dari vektor, dengan ukuran sesuai input dari pengguna. Ini dilakukan dengan menggunakan inisialisasi vektor yang mengambil tiga parameter: panjang, lebar, dan tinggi.
+   
+4. Meminta pengguna untuk memasukkan elemen-elemen array dengan menggunakan nested loop (loop bersarang) yang menampilkan pesan "Array[i][j][k]: " di mana i, j, dan k adalah indeks array tiga dimensi.
+   
+5. Setelah semua elemen dimasukkan, program akan selesai.
+
+**Hasil output**
+
+```C++
+Masukkan panjang array: 2
+Masukkan lebar array: 2
+Masukkan tinggi array: 2
+Masukkan elemen-elemen array:
+Array[0][0][0]: 1
+Array[0][0][1]: 2
+Array[0][1][0]: 3
+Array[0][1][1]: 4
+Array[1][0][0]: 5
+Array[1][0][1]: 6
+Array[1][1][0]: 7
+Array[1][1][1]: 8
+
+Elemen-elemen array:
+Array[0][0][0]: 1
+Array[0][0][1]: 2
+Array[0][1][0]: 3
+Array[0][1][1]: 4
+Array[1][0][0]: 5
+Array[1][0][1]: 6
+Array[1][1][0]: 7
+Array[1][1][1]: 8
+```
+Penjelasan:
+
+Pengguna diminta untuk memasukkan panjang, lebar, dan tinggi array, yang dalam contoh di atas adalah 2 untuk setiap dimensi.
+
+Setelah itu, program meminta pengguna untuk memasukkan elemen-elemen array sesuai dengan ukuran yang telah dimasukkan sebelumnya. Pengguna memasukkan elemen-elemen array satu per satu.
+
+Setelah semua elemen array dimasukkan, program menampilkan elemen-elemen array yang telah dimasukkan oleh pengguna ke layar. Setiap elemen array ditampilkan dengan format Array[i][j][k]: value, di mana i, j, dan k adalah indeks elemen array dalam tiga dimensi, dan value adalah nilai dari elemen tersebut
+
+**UNGUIDED 3**
+```C++
+
 
 
