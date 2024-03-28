@@ -343,7 +343,151 @@ Array ke-5: 7
 
 **UNGUIDED**
 
+**UNGUIDED1**
+```C++
+#include <iostream>
+#include <vector>
 
+int main() {
+    int n;
+    std::cout << "Masukkan panjang array: ";
+    std::cin >> n;
+
+    std::vector<int> array(n);
+
+    std::cout << "Masukkan " << n << " angka: ";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> array[i];
+    }
+
+    std::cout << "Data Array: ";
+    for (int i = 0; i < n; ++i) {
+        std::cout << array[i];
+        if (i < n - 1) {
+            std::cout << " ";
+        }
+    }
+    std::cout << std::endl;
+
+    std::cout << "Nomor Genap: ";
+    for (int i = 0; i < n; ++i) {
+        if (array[i] % 2 == 0) {
+            std::cout << array[i];
+            if (i < n - 1) {
+                std::cout << ", ";
+            }
+        }
+    }
+    std::cout << std::endl;
+
+    std::cout << "Nomor Ganjil: ";
+    for (int i = 0; i < n; ++i) {
+        if (array[i] % 2 != 0) {
+            std::cout << array[i];
+            if (i < n - 1) {
+                std::cout << ", ";
+            }
+        }
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+```
+
+**BAGIAN 1**
+```C++
+#include <iostream>
+#include <vector>
+```
+Penjelasan:
+#include <iostream> digunakan untuk memungkinkan penggunaan fungsi-fungsi input-output standar seperti cout dan cin. Sedangkan #include <vector> digunakan untuk mengizinkan penggunaan struktur data vector, yang merupakan array dinamis yang memungkinkan penyimpanan dan manipulasi data dengan fleksibilitas lebih besar daripada array statis
+
+**BAGIAN 2**
+```C++
+int main() {
+    int n;
+    std::cout << "Masukkan panjang array: ";
+    std::cin >> n;
+
+    std::vector<int> array(n);
+
+    std::cout << "Masukkan " << n << " angka: ";
+    for (int i = 0; i < n; ++i) {
+        std::cin >> array[i];
+    }
+
+    std::cout << "Data Array: ";
+    for (int i = 0; i < n; ++i) {
+        std::cout << array[i];
+        if (i < n - 1) {
+            std::cout << " ";
+        }
+    }
+    std::cout << std::endl;
+
+    std::cout << "Nomor Genap: ";
+    for (int i = 0; i < n; ++i) {
+        if (array[i] % 2 == 0) {
+            std::cout << array[i];
+            if (i < n - 1) {
+                std::cout << ", ";
+            }
+        }
+    }
+    std::cout << std::endl;
+
+    std::cout << "Nomor Ganjil: ";
+    for (int i = 0; i < n; ++i) {
+        if (array[i] % 2 != 0) {
+            std::cout << array[i];
+            if (i < n - 1) {
+                std::cout << ", ";
+            }
+        }
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+```
+Penjelasan:
+1. Program meminta pengguna untuk memasukkan panjang array.
+
+2. Array dengan panjang yang dimasukkan oleh pengguna dideklarasikan menggunakan std::vector<int> array(n);
+   .
+3. Pengguna diminta untuk memasukkan angka-angka sebanyak panjang array yang telah ditentukan.
+   
+4. Program mengisi array dengan angka-angka yang dimasukkan oleh pengguna menggunakan loop for.
+   
+5. Program mencetak seluruh data yang ada di dalam array.
+   
+6. Program mencetak angka-angka genap yang terdapat dalam array dengan menggunakan loop for dan kondisi if.
+   
+7. Program mencetak angka-angka ganjil yang terdapat dalam array dengan menggunakan loop for dan kondisi if
+
+**Hasil output**
+```C++
+Masukkan panjang array: 6
+Masukkan 6 angka: 4 1 3 8 7 10
+Data Array: 4 1 3 8 7 10
+Nomor Genap: 4, 8, 10
+Nomor Ganjil: 1, 3, 7
+```
+Penjelasan:
+
+Menunjukkan hasil dari eksekusi program yang meminta pengguna untuk memasukkan panjang array dan 6 angka. Setelah pengguna memasukkan angka-angka tersebut, program menampilkan array tersebut, diikuti dengan nomor-nomor genap yang terdapat dalam array, dan terakhir nomor-nomor ganjil.
+
+Hasil output:
+
+1. Data Array: Menampilkan seluruh angka yang dimasukkan oleh pengguna ke dalam array, yaitu: 4, 1, 3, 8, 7, dan 10.
+   
+2. Nomor Genap: Menampilkan angka-angka genap yang terdapat dalam array, yaitu: 4, 8, dan 10. Angka-angka ini dipisahkan oleh koma.
+   
+3. Nomor Ganjil: Menampilkan angka-angka ganjil yang terdapat dalam array, yaitu: 1, 3, dan 7. Angka-angka ini juga dipisahkan oleh koma.
+
+**UNGUIDED2**
+```C++
 
 
 
